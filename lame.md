@@ -1,7 +1,8 @@
 ### Lame
 
 To begin with, I scanned for all the open ports.
-```nmap -p- -T4 -Pn 10.10.10.3
+```
+nmap -p- -T4 -Pn 10.10.10.3
 ```
 ![](images/lame-nmap1.png)
 
@@ -10,15 +11,18 @@ Since port 21 is open, I checked if anonymous login was available. It was, but d
 ![](images/lame-ftp.png)
 
 Since ports 139 and 445 were open my next option was to use SMB. We may find something there. So to check what I can access without a login, I used smbmap.
-```smbmap -H 10.10.10.3
+```
+smbmap -H 10.10.10.3
 ```
 Since we have access to /tmp, I used smbclient to access it.
-```smbclient -N ////10.10.10.3/tmp
+```
+smbclient -N ////10.10.10.3/tmp
 ```
 But this gave an error. "protocol negotiation failed: NT_STATUS_CONNECTION_DISCONNECTED"
 I googled the error and found the solution in a HackTheBox discussion forum. The command I then used was
 
-```smbclient -N ////10.10.10.3/tmp --option='client min protocol=NT1'
+```
+smbclient -N ////10.10.10.3/tmp --option='client min protocol=NT1'
 ```
 ![](images/lame-smb.png)
 
@@ -32,7 +36,7 @@ The exploit ran quickly and I got the shell, that too as root. No privilage esca
 
 ![](images/lame-msf2.png)
 
-User flag **b1a779a7810447c64526195323b1c2c1**
 
+User flag **b1a779a7810447c64526195323b1c2c1** \n
 Root flag **4da8863dab11977103c07125ef4545c1**
 
