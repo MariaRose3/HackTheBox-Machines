@@ -32,7 +32,7 @@ Though I referred the above article, I made a few changes. Apart from changing t
 
 ![](images/lame-msf1.png)
 
-The exploit ran quickly and I got the shell, that too as root. No privilage escalation. Easy!
+The exploit ran quickly and I got the shell, that too as root. No privilage escalation. Easy!!
 
 ![](images/lame-msf2.png)
 
