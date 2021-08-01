@@ -47,7 +47,7 @@ In /scripts, test.py belongs to scriptmanager and the other test.txt belongs to 
 
 So I opened test.py.
 
-![](images.bashed-test.py.png)
+![](images/bashed-test.py.png)
 
 Strange, test.txt was supposed to belong to scriptmanager. So I renamed test.txt as test1.txt and then ran test.py again. This time the test.txt that was created and it belonged to scriptmanager.
 
