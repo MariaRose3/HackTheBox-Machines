@@ -1,4 +1,4 @@
-### Lame
+## Lame
 
 To begin with, I scanned for all the open ports.
 ```
@@ -37,6 +37,6 @@ The exploit ran quickly and I got the shell, that too as root. No privilage esca
 ![](images/lame-msf2.png)
 
 
-User flag **b1a779a7810447c64526195323b1c2c1** \n
+User flag **b1a779a7810447c64526195323b1c2c1**   
 Root flag **4da8863dab11977103c07125ef4545c1**
 
