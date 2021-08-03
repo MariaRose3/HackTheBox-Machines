@@ -30,9 +30,10 @@ I brought Groups.xml to my machine.
 ![](images/active-groups.png)
 
 Here, I found the user, SVC_TGS, whose password hash is 'edBSHOwhZLTjt/QS9FeIcJ83mjWA98gw9guKOhJOdcqh+ZGMeXOsQbCpZ3xUjTLfCuNH8pG5aSVYdYw/NglVmQ'
+
 In Microsoft all the passwords are encrypted with the same key, which is known publicly. I used the tool gpp-decrypt to crack the hash.
 
-![](images.active-gpp.png)
+![](images/active-gpp.png)
 
 So the password is 'GPPstillStandingStrong2k18'
 
@@ -51,8 +52,9 @@ smbclient //10.10.10.100/Users -U active.htb\\SVC_TGS%GPPstillStandingStrong2k18
 
 ![](images/active-smbclient1.png)
 
-Thus, I got the user flag.
+Thus, I got the user flag.     
 **86d67d8ba232bb6a254aa4d10159e983**
+
 
 
 ### Privilage Escalation
@@ -78,13 +80,14 @@ smbmap -H 10.10.10.100 -d active.htb -u administrator -p Ticketmaster1968
 ```
 ![](images/active-smbmap2.png)
 
-Thus we can access ADMIN$ and C$. Generally in windows machines, the root password is at C$, in the Desktop folder of the administrator.
+Thus we can access ADMIN$ and C$. Generally, in windows machines, the root password is at C$, in the Desktop folder of the administrator.
 ```
 smbclient //10.10.10.100/C$ -U active.htb\\administrator%Ticketmaster1968
 ```
 ![](images/active-root.png)
 
-Thus, I got the root flag. **b5fc76d1d6b91d77b2fbf2d54d0f708b**
+Thus, I got the root flag.   
+**b5fc76d1d6b91d77b2fbf2d54d0f708b**
 
 I wanted the shell also. So I found the suitable script, psexec.py in the same location as before.
 
