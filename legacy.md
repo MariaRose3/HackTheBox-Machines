@@ -1,7 +1,7 @@
 ## Legacy
 *Easy*
 
-Used rustscan to find openports.
+Used rustscan to find open ports.
 
 ![](images/legacy-scan.png)
 
