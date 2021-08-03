@@ -45,6 +45,7 @@ But I am not the administrator. So I need to become the admin. So looking for so
 ![](images/devel-sysinfo.png)
 
 https://null-byte.wonderhowto.com/how-to/bypass-uac-escalate-privileges-windows-using-metasploit-0196076/ was helpful to understand privialge escalation.
+
 https://titanwolf.org/Network/Articles/Article?AID=e8a8d6f5-38ff-419f-ac2b-4b43f646f43a#gsc.tab=0 also helped.
 
 Tried privilage escalation but failed.
@@ -67,6 +68,6 @@ So finally, became the admin.
 
 ![](images/devel-root.png)
 
-User flag **9ecdd6a3aedf24b41562fea70f4cb3e8**
+User flag **9ecdd6a3aedf24b41562fea70f4cb3e8**   
 Root flag **e621a0b5041708797c4fc4728bc72b4b**
 
