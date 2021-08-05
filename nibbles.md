@@ -33,7 +33,7 @@ There was a login page at /admin.php
 
 ![](images/nibbles-web6.png)
 
-Tried using common credentials like admin:admin but didn;t work. With some guessing tried admin:nibbles and got logged in.
+Tried using common credentials like admin:admin but didn't work. With some guessing tried admin:nibbles and got logged in.
 
 ![](images/nibbles-web7.png)
 
