@@ -1,7 +1,7 @@
 ## Mirai
 *Easy*
 
-Scanned for open prots with rustscan.
+Scanned for open ports with rustscan.
 
 ![](images/mirai-scan1.png)
 
@@ -47,7 +47,7 @@ Then I tried to get the root flag authentically.
 
 Used 'sudo su' and became the root. In the /media/usbstick there is a file 'damnit.txt'.
 
-![](images/mirai-damnit.txt)
+![](images/mirai-damnit.png)
 
 Using the command 'df -h' I found that /media/usbstick is mounted on /dev/sdb
 
