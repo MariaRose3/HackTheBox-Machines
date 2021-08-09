@@ -26,7 +26,7 @@ Opened the webpage.
 
 I then opened /iisstart.aspx and /aliproject.aspx and through inspect element found that the server is running ASP.NET
 
-![](images/devel-headers.png)
+![](images/devel-heders.png)
 
 So might have to upload a .aspx webshell via FTP and then open it in the browser to get the reverse shell.
 
